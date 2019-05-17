@@ -1,0 +1,9 @@
+#
+# fips-cimgui
+#
+---
+exports:
+    header-dirs: .
+    modules:
+        cimgui: .
+
