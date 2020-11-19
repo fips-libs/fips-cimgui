@@ -26,6 +26,11 @@ fips_begin_lib(cimgui)
     )
 fips_end_lib()
 
+if (FIPS_CLANG)
+    # temp workaround for https://github.com/cimgui/cimgui/issues/166
+    target_compile_options(cimgui PUBLIC -Wno-typedef-redefinition)
+endif()
+
 if (FIPS_CLANG OR FIPS_GCC)
     target_compile_options(cimgui PUBLIC -Wno-return-type-c-linkage)
 elseif (FIPS_MSVC)
