@@ -29,7 +29,7 @@ fips_end_lib()
 
 if (FIPS_CLANG)
     # temp workaround for https://github.com/cimgui/cimgui/issues/166
-    target_compile_options(cimgui PUBLIC -Wno-typedef-redefinition)
+    target_compile_options(cimgui PUBLIC -Wno-unused-parameter -Wno-typedef-redefinition)
 endif()
 
 if (FIPS_CLANG OR FIPS_GCC)
