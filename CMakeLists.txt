@@ -26,6 +26,7 @@ fips_begin_lib(cimgui)
         imstb_truetype.h 
     )
 fips_end_lib()
+target_include_directories(cimgui PUBLIC .)
 
 if (FIPS_CLANG)
     # temp workaround for https://github.com/cimgui/cimgui/issues/166
