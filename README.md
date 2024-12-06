@@ -1,3 +1,5 @@
+> NOTE: this version is archived and will no longer be updated, please use https://github.com/floooh/dcimgui
+
 # fips-cimgui
 
 fipsified cimgui lib (https://github.com/cimgui/cimgui)
@@ -33,4 +35,3 @@ Include the cimgui header like this:
 #define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 #include "cimgui/cimgui.h"
 ```
-
